@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Sourcing & Supplier Management - DairyConnect | Find Quality Dairy Suppliers</title>
+    <meta name="description" content="Discover and manage reliable dairy suppliers with DairyConnect's advanced sourcing platform. Find farmers by quality, capacity, and location with comprehensive supplier scorecards.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-surface-light shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2C11.163 2 4 9.163 4 18v4c0 8.837 7.163 16 16 16s16-7.163 16-16v-4c0-8.837-7.163-16-16-16zm0 4c6.627 0 12 5.373 12 12v4c0 6.627-5.373 12-12 12s-12-5.373-12-12v-4c0-6.627 5.373-12 12-12z"/>
+                        <circle cx="20" cy="18" r="6" fill="currentColor"/>
+                        <path d="M14 26h12v2H14z" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-inter font-bold text-primary">DairyConnect</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_agricultural_technology_platform.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="live_marketplace_trading_platform.html" class="text-text-secondary hover:text-primary transition-smooth">Marketplace</a>
+                    <a href="quality_verification_testing_hub.html" class="text-text-secondary hover:text-primary transition-smooth">Quality Hub</a>
+                    <a href="farmer_dashboard_analytics.html" class="text-text-secondary hover:text-primary transition-smooth">Farmer Portal</a>
+                    <a href="buyer_sourcing_supplier_management.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Buyer Portal</a>
+                    <a href="payment_processing_financial_transparency.html" class="text-text-secondary hover:text-primary transition-smooth">Payments</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="btn-secondary text-sm px-4 py-2">Join as Farmer</button>
+                    <button class="btn-primary text-sm px-4 py-2">Source Quality Milk</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-text-primary mb-4">
+                    Find & Manage <span class="text-primary">Quality Suppliers</span>
+                </h1>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Discover reliable dairy farmers, build lasting partnerships, and ensure consistent quality supply with our comprehensive supplier management platform.
+                </p>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-primary">2,847</div>
+                    <div class="text-sm text-text-secondary">Verified Suppliers</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-accent">98.5%</div>
+                    <div class="text-sm text-text-secondary">Quality Score</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-secondary">15,000+</div>
+                    <div class="text-sm text-text-secondary">Liters/Day</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-success">99.2%</div>
+                    <div class="text-sm text-text-secondary">On-time Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Search & Filters -->
+    <section class="py-12 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="card">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-inter font-bold text-text-primary">Find Suppliers</h2>
+                    <button class="btn-accent px-4 py-2 text-sm flex items-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+                        </svg>
+                        Advanced Filters
+                    </button>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="relative mb-6">
+                    <input type="text" placeholder="Search by farmer name, location, or certification..." 
+                           class="input-field pl-12 pr-4">
+                    <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-hint" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Filter Tags -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-6">
+                    <select class="input-field text-sm">
+                        <option>All Locations</option>
+                        <option>Punjab</option>
+                        <option>Haryana</option>
+                        <option>Gujarat</option>
+                        <option>Rajasthan</option>
+                    </select>
+                    <select class="input-field text-sm">
+                        <option>Production Capacity</option>
+                        <option>50-100L/day</option>
+                        <option>100-500L/day</option>
+                        <option>500-1000L/day</option>
+                        <option>1000L+/day</option>
+                    </select>
+                    <select class="input-field text-sm">
+                        <option>Quality Score</option>
+                        <option>9.0+ Excellent</option>
+                        <option>8.0-9.0 Very Good</option>
+                        <option>7.0-8.0 Good</option>
+                    </select>
+                    <select class="input-field text-sm">
+                        <option>Certifications</option>
+                        <option>Organic Certified</option>
+                        <option>ISO Compliant</option>
+                        <option>FSSAI Approved</option>
+                    </select>
+                    <select class="input-field text-sm">
+                        <option>Reliability Score</option>
+                        <option>95%+ Excellent</option>
+                        <option>90-95% Very Good</option>
+                        <option>85-90% Good</option>
+                    </select>
+                    <button class="btn-secondary text-sm px-4 py-2 flex items-center justify-center">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                        Reset
+                    </button>
+                </div>
+
+                <!-- Results Summary -->
+                <div class="flex items-center justify-between text-sm text-text-secondary">
+                    <span>Showing 247 suppliers matching your criteria</span>
+                    <div class="flex items-center space-x-4">
+                        <span>Sort by:</span>
+                        <select class="border border-border rounded px-3 py-1 text-sm">
+                            <option>Quality Score</option>
+                            <option>Reliability</option>
+                            <option>Capacity</option>
+                            <option>Distance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supplier Cards Grid -->
+    <section class="py-12 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Supplier Card 1 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                 alt="Rajesh Kumar" 
+                                 class="w-12 h-12 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Rajesh Kumar</h3>
+                                <p class="text-sm text-text-secondary">Ludhiana, Punjab</p>
+                            </div>
+                        </div>
+                        <div class="status-success">Premium</div>
+                    </div>
+
+                    <!-- Supplier Scorecard -->
+                    <div class="bg-surface rounded-lg p-4 mb-4">
+                        <h4 class="font-inter font-semibold text-sm mb-3">Supplier Scorecard</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Quality Score</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-success">9.2</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Reliability</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 96%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-accent">96%</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Communication</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 88%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-primary">8.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-primary">450L</div>
+                            <div class="text-xs text-text-secondary">Daily Capacity</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-accent">3.2km</div>
+                            <div class="text-xs text-text-secondary">Distance</div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-success-light text-success-dark px-2 py-1 rounded text-xs font-medium">Organic</span>
+                        <span class="bg-accent-light text-accent-dark px-2 py-1 rounded text-xs font-medium">ISO</span>
+                        <span class="bg-primary-light text-primary-dark px-2 py-1 rounded text-xs font-medium">FSSAI</span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm py-2">View Profile</button>
+                        <button class="btn-accent text-sm px-4 py-2">Contact</button>
+                    </div>
+                </div>
+
+                <!-- Supplier Card 2 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.pixabay.com/photo/2016/11/21/14/53/woman-1845517_960_720.jpg" 
+                                 alt="Priya Sharma" 
+                                 class="w-12 h-12 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Priya Sharma</h3>
+                                <p class="text-sm text-text-secondary">Karnal, Haryana</p>
+                            </div>
+                        </div>
+                        <div class="status-warning">Verified</div>
+                    </div>
+
+                    <!-- Supplier Scorecard -->
+                    <div class="bg-surface rounded-lg p-4 mb-4">
+                        <h4 class="font-inter font-semibold text-sm mb-3">Supplier Scorecard</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Quality Score</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 87%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-success">8.7</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Reliability</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 91%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-accent">91%</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Communication</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 94%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-primary">9.4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-primary">320L</div>
+                            <div class="text-xs text-text-secondary">Daily Capacity</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-accent">5.8km</div>
+                            <div class="text-xs text-text-secondary">Distance</div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-accent-light text-accent-dark px-2 py-1 rounded text-xs font-medium">ISO</span>
+                        <span class="bg-primary-light text-primary-dark px-2 py-1 rounded text-xs font-medium">FSSAI</span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm py-2">View Profile</button>
+                        <button class="btn-accent text-sm px-4 py-2">Contact</button>
+                    </div>
+                </div>
+
+                <!-- Supplier Card 3 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=60" 
+                                 alt="Amit Patel" 
+                                 class="w-12 h-12 rounded-full object-cover"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Amit Patel</h3>
+                                <p class="text-sm text-text-secondary">Anand, Gujarat</p>
+                            </div>
+                        </div>
+                        <div class="status-success">Premium</div>
+                    </div>
+
+                    <!-- Supplier Scorecard -->
+                    <div class="bg-surface rounded-lg p-4 mb-4">
+                        <h4 class="font-inter font-semibold text-sm mb-3">Supplier Scorecard</h4>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Quality Score</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-success">9.5</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Reliability</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-accent h-2 rounded-full" style="width: 98%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-accent">98%</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Communication</span>
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-16 bg-border rounded-full h-2">
+                                        <div class="bg-primary h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-sm font-medium text-primary">9.2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-primary">680L</div>
+                            <div class="text-xs text-text-secondary">Daily Capacity</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-lg font-inter font-bold text-accent">2.1km</div>
+                            <div class="text-xs text-text-secondary">Distance</div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-success-light text-success-dark px-2 py-1 rounded text-xs font-medium">Organic</span>
+                        <span class="bg-accent-light text-accent-dark px-2 py-1 rounded text-xs font-medium">ISO</span>
+                        <span class="bg-primary-light text-primary-dark px-2 py-1 rounded text-xs font-medium">FSSAI</span>
+                        <span class="bg-secondary-light text-secondary-dark px-2 py-1 rounded text-xs font-medium">A2</span>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex space-x-2">
+                        <button class="btn-primary flex-1 text-sm py-2">View Profile</button>
+                        <button class="btn-accent text-sm px-4 py-2">Contact</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-8">
+                <button class="btn-secondary px-8 py-3">Load More Suppliers</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Management Dashboard -->
+    <section class="py-16 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">Contract Management</h2>
+                <p class="text-lg text-text-secondary">
+                    Manage long-term agreements and track performance milestones
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Active Contracts -->
+                <div class="lg:col-span-2">
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">Active Contracts</h3>
+                            <button class="btn-primary text-sm px-4 py-2">New Contract</button>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Contract 1 -->
+                            <div class="border border-border rounded-lg p-4">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="font-inter font-semibold text-text-primary">Rajesh Kumar - Premium Supply</h4>
+                                        <p class="text-sm text-text-secondary">450L/day • ₹46.50/L • 12 months</p>
+                                    </div>
+                                    <div class="status-success">Active</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 gap-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-primary">8.2</div>
+                                        <div class="text-xs text-text-secondary">Months Left</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-accent">96%</div>
+                                        <div class="text-xs text-text-secondary">Performance</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-success">₹2.1L</div>
+                                        <div class="text-xs text-text-secondary">Monthly Value</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <button class="text-accent text-sm hover:underline">View Details</button>
+                                        <button class="text-primary text-sm hover:underline">Modify Terms</button>
+                                    </div>
+                                    <div class="text-sm text-text-secondary">Next Review: Jan 15, 2025</div>
+                                </div>
+                            </div>
+
+                            <!-- Contract 2 -->
+                            <div class="border border-border rounded-lg p-4">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="font-inter font-semibold text-text-primary">Amit Patel - Organic Supply</h4>
+                                        <p class="text-sm text-text-secondary">680L/day • ₹52.00/L • 18 months</p>
+                                    </div>
+                                    <div class="status-success">Active</div>
+                                </div>
+                                
+                                <div class="grid grid-cols-3 gap-4 mb-3">
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-primary">14.5</div>
+                                        <div class="text-xs text-text-secondary">Months Left</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-accent">98%</div>
+                                        <div class="text-xs text-text-secondary">Performance</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-lg font-inter font-bold text-success">₹3.5L</div>
+                                        <div class="text-xs text-text-secondary">Monthly Value</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-2">
+                                        <button class="text-accent text-sm hover:underline">View Details</button>
+                                        <button class="text-primary text-sm hover:underline">Modify Terms</button>
+                                    </div>
+                                    <div class="text-sm text-text-secondary">Next Review: Mar 20, 2025</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contract Analytics -->
+                <div class="space-y-6">
+                    <!-- Performance Overview -->
+                    <div class="card">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Performance Overview</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Contract Compliance</span>
+                                <span class="text-sm font-medium text-success">97.2%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Quality Standards</span>
+                                <span class="text-sm font-medium text-success">94.8%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Delivery Reliability</span>
+                                <span class="text-sm font-medium text-accent">96.5%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-text-secondary">Cost Efficiency</span>
+                                <span class="text-sm font-medium text-primary">92.1%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Risk Management -->
+                    <div class="card">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Risk Management</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-text-primary">Supplier Diversification</div>
+                                    <div class="text-xs text-text-secondary">12 active suppliers</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-text-primary">Seasonal Risk</div>
+                                    <div class="text-xs text-text-secondary">Medium exposure</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div class="flex-1">
+                                    <div class="text-sm font-medium text-text-primary">Backup Suppliers</div>
+                                    <div class="text-xs text-text-secondary">5 standby options</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Market Intelligence -->
+                    <div class="card">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Market Intelligence</h3>
+                        <div class="space-y-3">
+                            <div class="text-center">
+                                <div class="text-2xl font-inter font-bold text-primary">₹45.80</div>
+                                <div class="text-sm text-text-secondary">Avg. Market Price</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-inter font-bold text-accent">+2.3%</div>
+                                <div class="text-sm text-text-secondary">Price Trend (7 days)</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-lg font-inter font-bold text-success">High</div>
+                                <div class="text-sm text-text-secondary">Supply Availability</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-time Inventory Tracking -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">Real-time Inventory</h2>
+                <p class="text-lg text-text-secondary">
+                    Track available milk quantities and quality specifications across your network
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 gap-6">
+                <!-- Inventory Summary -->
+                <div class="lg:col-span-3">
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">Available Inventory</h3>
+                            <div class="flex items-center space-x-2 text-sm text-text-secondary">
+                                <div class="w-2 h-2 bg-success rounded-full animate-pulse"></div>
+                                <span>Live Updates</span>
+                            </div>
+                        </div>
+
+                        <div class="overflow-x-auto">
+                            <table class="w-full">
+                                <thead>
+                                    <tr class="border-b border-border">
+                                        <th class="text-left py-3 text-sm font-inter font-semibold text-text-primary">Supplier</th>
+                                        <th class="text-left py-3 text-sm font-inter font-semibold text-text-primary">Available</th>
+                                        <th class="text-left py-3 text-sm font-inter font-semibold text-text-primary">Quality</th>
+                                        <th class="text-left py-3 text-sm font-inter font-semibold text-text-primary">Collection</th>
+                                        <th class="text-left py-3 text-sm font-inter font-semibold text-text-primary">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-border">
+                                    <tr>
+                                        <td class="py-3">
+                                            <div class="flex items-center space-x-3">
+                                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                                     alt="Rajesh Kumar" 
+                                                     class="w-8 h-8 rounded-full object-cover"
+                                                     loading="lazy"
+                                                     onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                                <div>
+                                                    <div class="text-sm font-medium text-text-primary">Rajesh Kumar</div>
+                                                    <div class="text-xs text-text-secondary">Ludhiana, Punjab</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm font-medium text-text-primary">420L</div>
+                                            <div class="text-xs text-text-secondary">of 450L capacity</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="status-success">9.2/10</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm text-text-primary">6:00 AM</div>
+                                            <div class="text-xs text-text-secondary">Daily</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <button class="btn-primary text-xs px-3 py-1">Reserve</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3">
+                                            <div class="flex items-center space-x-3">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=60" 
+                                                     alt="Amit Patel" 
+                                                     class="w-8 h-8 rounded-full object-cover"
+                                                     loading="lazy"
+                                                     onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                                <div>
+                                                    <div class="text-sm font-medium text-text-primary">Amit Patel</div>
+                                                    <div class="text-xs text-text-secondary">Anand, Gujarat</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm font-medium text-text-primary">650L</div>
+                                            <div class="text-xs text-text-secondary">of 680L capacity</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="status-success">9.5/10</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm text-text-primary">5:30 AM</div>
+                                            <div class="text-xs text-text-secondary">Daily</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <button class="btn-primary text-xs px-3 py-1">Reserve</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3">
+                                            <div class="flex items-center space-x-3">
+                                                <img src="https://images.pixabay.com/photo/2016/11/21/14/53/woman-1845517_960_720.jpg" 
+                                                     alt="Priya Sharma" 
+                                                     class="w-8 h-8 rounded-full object-cover"
+                                                     loading="lazy"
+                                                     onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                                <div>
+                                                    <div class="text-sm font-medium text-text-primary">Priya Sharma</div>
+                                                    <div class="text-xs text-text-secondary">Karnal, Haryana</div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm font-medium text-text-primary">290L</div>
+                                            <div class="text-xs text-text-secondary">of 320L capacity</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="status-warning">8.7/10</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <div class="text-sm text-text-primary">6:30 AM</div>
+                                            <div class="text-xs text-text-secondary">Daily</div>
+                                        </td>
+                                        <td class="py-3">
+                                            <button class="btn-primary text-xs px-3 py-1">Reserve</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="space-y-6">
+                    <div class="card text-center">
+                        <h4 class="font-inter font-semibold text-text-primary mb-2">Total Available</h4>
+                        <div class="text-3xl font-inter font-bold text-primary mb-1">12,450L</div>
+                        <div class="text-sm text-text-secondary">Across 247 suppliers</div>
+                    </div>
+
+                    <div class="card text-center">
+                        <h4 class="font-inter font-semibold text-text-primary mb-2">Quality Average</h4>
+                        <div class="text-3xl font-inter font-bold text-success mb-1">9.1/10</div>
+                        <div class="text-sm text-text-secondary">Network quality score</div>
+                    </div>
+
+                    <div class="card text-center">
+                        <h4 class="font-inter font-semibold text-text-primary mb-2">Reserved Today</h4>
+                        <div class="text-3xl font-inter font-bold text-accent mb-1">8,200L</div>
+                        <div class="text-sm text-text-secondary">66% of available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Trust Badges -->
+            <div class="border-b border-primary-700 pb-8 mb-8">
+                <h3 class="text-lg font-inter font-semibold mb-6 text-center">Trusted & Certified</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Government Approved</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">ISO Certified</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 1L9 9l-8 3 8 3 3 8 3-8 8-3-8-3-3-8z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Cooperative Partner</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Quality Assured</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="farmer_dashboard_analytics.html" class="hover:text-white transition-smooth">Farmer Dashboard</a></li>
+                        <li><a href="buyer_sourcing_supplier_management.html" class="hover:text-white transition-smooth">Buyer Portal</a></li>
+                        <li><a href="live_marketplace_trading_platform.html" class="hover:text-white transition-smooth">Live Marketplace</a></li>
+                        <li><a href="quality_verification_testing_hub.html" class="hover:text-white transition-smooth">Quality Hub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="payment_processing_financial_transparency.html" class="hover:text-white transition-smooth">Payment Processing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Collection Network</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Quality Testing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Market Analytics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Training Resources</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-sm text-primary-200 border-t border-primary-700 pt-8">
+                <p>© 2025 DairyConnect. All Rights Reserved. | Empowering farmers, ensuring quality, building trust.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

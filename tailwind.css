@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #2D5016; /* Deep agricultural green */
+  --color-primary-50: #F1F8E9; /* Light green tint */
+  --color-primary-100: #DCEDC8; /* Lighter green */
+  --color-primary-200: #C5E1A5; /* Light green */
+  --color-primary-300: #AED581; /* Medium light green */
+  --color-primary-400: #9CCC65; /* Medium green */
+  --color-primary-500: #8BC34A; /* Standard green */
+  --color-primary-600: #689F38; /* Darker green */
+  --color-primary-700: #558B2F; /* Dark green */
+  --color-primary-800: #33691E; /* Very dark green */
+  --color-primary-900: #2D5016; /* Deep agricultural green */
+
+  /* Secondary Colors */
+  --color-secondary: #8B4513; /* Rich earth brown */
+  --color-secondary-50: #FBF2ED; /* Light brown tint */
+  --color-secondary-100: #F4E4D6; /* Lighter brown */
+  --color-secondary-200: #E8C5A0; /* Light brown */
+  --color-secondary-300: #DCA76A; /* Medium light brown */
+  --color-secondary-400: #D08934; /* Medium brown */
+  --color-secondary-500: #C46B00; /* Standard brown */
+  --color-secondary-600: #A0561A; /* Darker brown */
+  --color-secondary-700: #8B4513; /* Rich earth brown */
+  --color-secondary-800: #76340F; /* Very dark brown */
+  --color-secondary-900: #61230B; /* Deepest brown */
+
+  /* Accent Colors */
+  --color-accent: #1E88E5; /* Technology blue */
+  --color-accent-50: #E3F2FD; /* Light blue tint */
+  --color-accent-100: #BBDEFB; /* Lighter blue */
+  --color-accent-200: #90CAF9; /* Light blue */
+  --color-accent-300: #64B5F6; /* Medium light blue */
+  --color-accent-400: #42A5F5; /* Medium blue */
+  --color-accent-500: #2196F3; /* Standard blue */
+  --color-accent-600: #1E88E5; /* Technology blue */
+  --color-accent-700: #1976D2; /* Dark blue */
+  --color-accent-800: #1565C0; /* Very dark blue */
+  --color-accent-900: #0D47A1; /* Deepest blue */
+
+  /* Background Colors */
+  --color-background: #FAFAFA; /* Clean canvas */
+  --color-surface: #F5F5F5; /* Subtle card elevation */
+  --color-surface-light: #FFFFFF; /* Pure white */
+  --color-surface-dark: #EEEEEE; /* Darker surface */
+
+  /* Text Colors */
+  --color-text-primary: #212121; /* High contrast */
+  --color-text-secondary: #757575; /* Clear hierarchy */
+  --color-text-disabled: #BDBDBD; /* Disabled text */
+  --color-text-hint: #9E9E9E; /* Hint text */
+
+  /* Status Colors */
+  --color-success: #4CAF50; /* Natural growth green */
+  --color-success-light: #C8E6C9; /* Light success */
+  --color-success-dark: #388E3C; /* Dark success */
+
+  --color-warning: #FF9800; /* Harvest orange */
+  --color-warning-light: #FFE0B2; /* Light warning */
+  --color-warning-dark: #F57C00; /* Dark warning */
+
+  --color-error: #D32F2F; /* Respectful red */
+  --color-error-light: #FFCDD2; /* Light error */
+  --color-error-dark: #C62828; /* Dark error */
+
+  /* Border Colors */
+  --color-border: #E0E0E0; /* Neutral border */
+  --color-border-light: #F5F5F5; /* Light border */
+  --color-border-dark: #BDBDBD; /* Dark border */
+
+  /* Shadow Values */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-elevated: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  /* Animation Timing */
+  --transition-fast: 300ms ease-out;
+  --transition-normal: 400ms ease-out;
+  --transition-slow: 500ms ease-out;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-text-primary);
+  }
+
+  .font-accent {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-primary-800 active:bg-primary-900;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-secondary-800 active:bg-secondary-900;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-inter font-semibold;
+    @apply hover:bg-accent-700 active:bg-accent-800;
+    @apply transition-all duration-300 ease-out;
+    @apply shadow-subtle hover:shadow-card;
+  }
+
+  .card {
+    @apply bg-surface-light rounded-lg p-6;
+    @apply shadow-subtle hover:shadow-card;
+    @apply transition-all duration-300 ease-out;
+    @apply border border-border-light;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg border border-border;
+    @apply bg-surface-light text-text-primary;
+    @apply focus:border-accent focus:ring-2 focus:ring-accent/20;
+    @apply transition-all duration-300 ease-out;
+    @apply placeholder:text-text-hint;
+  }
+
+  .status-success {
+    @apply bg-success/10 text-success-dark border border-success/20;
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .status-warning {
+    @apply bg-warning/10 text-warning-dark border border-warning/20;
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .status-error {
+    @apply bg-error/10 text-error-dark border border-error/20;
+    @apply px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .transition-smooth {
+    transition: all var(--transition-fast);
+  }
+
+  .transition-content {
+    transition: all var(--transition-normal);
+  }
+
+  .shadow-agricultural {
+    box-shadow: var(--shadow-subtle);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+}

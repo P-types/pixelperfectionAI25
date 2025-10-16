@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Marketplace & Trading Platform - DairyConnect</title>
+    <meta name="description" content="Real-time milk trading platform with transparent pricing, quality-based auctions, and direct farmer-buyer connections. Trade quality milk at fair market rates.">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-surface-light shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                        <path d="M20 2C11.163 2 4 9.163 4 18v4c0 8.837 7.163 16 16 16s16-7.163 16-16v-4c0-8.837-7.163-16-16-16zm0 4c6.627 0 12 5.373 12 12v4c0 6.627-5.373 12-12 12s-12-5.373-12-12v-4c0-6.627 5.373-12 12-12z"/>
+                        <circle cx="20" cy="18" r="6" fill="currentColor"/>
+                        <path d="M14 26h12v2H14z" fill="currentColor"/>
+                    </svg>
+                    <span class="ml-3 text-xl font-inter font-bold text-primary">DairyConnect</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_agricultural_technology_platform.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="live_marketplace_trading_platform.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Marketplace</a>
+                    <a href="quality_verification_testing_hub.html" class="text-text-secondary hover:text-primary transition-smooth">Quality Hub</a>
+                    <a href="farmer_dashboard_analytics.html" class="text-text-secondary hover:text-primary transition-smooth">Farmer Portal</a>
+                    <a href="buyer_sourcing_supplier_management.html" class="text-text-secondary hover:text-primary transition-smooth">Buyer Portal</a>
+                    <a href="payment_processing_financial_transparency.html" class="text-text-secondary hover:text-primary transition-smooth">Payments</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <button class="btn-secondary text-sm px-4 py-2">Join as Farmer</button>
+                    <button class="btn-primary text-sm px-4 py-2">Source Quality Milk</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-md text-text-secondary hover:text-primary">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Live Market Dashboard -->
+    <section class="py-8 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Market Header -->
+            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8">
+                <div>
+                    <h1 class="text-3xl lg:text-4xl font-inter font-bold text-text-primary mb-2">Live Marketplace</h1>
+                    <p class="text-lg text-text-secondary">Real-time milk trading with transparent pricing</p>
+                </div>
+                <div class="flex items-center space-x-4 mt-4 lg:mt-0">
+                    <div class="flex items-center space-x-2 bg-surface-light rounded-full px-4 py-2 shadow-subtle">
+                        <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                        <span class="text-sm font-medium">Market Open</span>
+                    </div>
+                    <div class="text-sm text-text-secondary">Last updated: 09:24 AM</div>
+                </div>
+            </div>
+
+            <!-- Real-time Price Dashboard -->
+            <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                <!-- Current Market Rates -->
+                <div class="lg:col-span-2 card">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary">Current Market Rates</h3>
+                        <button class="text-accent hover:text-accent-700 text-sm font-medium">View All Regions</button>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <!-- Premium Grade -->
+                        <div class="flex items-center justify-between p-4 bg-success-light rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-4 h-4 bg-success rounded-full"></div>
+                                <div>
+                                    <div class="font-inter font-semibold text-text-primary">Premium Grade</div>
+                                    <div class="text-sm text-text-secondary">Fat: 6%+ | SNF: 9%+</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-inter font-bold text-success-dark">₹48.50</div>
+                                <div class="text-sm text-success-dark flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l9.2-9.2M17 17V7H7"/>
+                                    </svg>
+                                    +₹2.30 (5.0%)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Standard Grade -->
+                        <div class="flex items-center justify-between p-4 bg-accent-50 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-4 h-4 bg-accent rounded-full"></div>
+                                <div>
+                                    <div class="font-inter font-semibold text-text-primary">Standard Grade</div>
+                                    <div class="text-sm text-text-secondary">Fat: 4-6% | SNF: 8-9%</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-inter font-bold text-accent-700">₹42.80</div>
+                                <div class="text-sm text-accent-700 flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17l9.2-9.2M17 17V7H7"/>
+                                    </svg>
+                                    +₹1.20 (2.9%)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Basic Grade -->
+                        <div class="flex items-center justify-between p-4 bg-secondary-50 rounded-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-4 h-4 bg-secondary rounded-full"></div>
+                                <div>
+                                    <div class="font-inter font-semibold text-text-primary">Basic Grade</div>
+                                    <div class="text-sm text-text-secondary">Fat: 3-4% | SNF: 7-8%</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-inter font-bold text-secondary-700">₹38.20</div>
+                                <div class="text-sm text-warning-dark flex items-center">
+                                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7l-9.2 9.2M7 7v10h10"/>
+                                    </svg>
+                                    -₹0.80 (2.1%)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Activity -->
+                <div class="card">
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">Today's Activity</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-inter font-bold text-primary">₹12.4L</div>
+                            <div class="text-sm text-text-secondary">Total Volume Traded</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-inter font-bold text-accent">2,847</div>
+                            <div class="text-sm text-text-secondary">Active Transactions</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-inter font-bold text-secondary">187</div>
+                            <div class="text-sm text-text-secondary">Farmers Online</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Interface -->
+    <section class="py-12 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Active Auctions -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary">Active Auctions</h2>
+                        <div class="flex items-center space-x-4">
+                            <button class="btn-secondary text-sm px-4 py-2">List Your Milk</button>
+                            <select class="input-field text-sm py-2">
+                                <option>All Regions</option>
+                                <option>Punjab</option>
+                                <option>Haryana</option>
+                                <option>Gujarat</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Auction Item 1 -->
+                        <div class="card hover:shadow-elevated transition-smooth">
+                            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                                <div class="flex items-start space-x-4 mb-4 lg:mb-0">
+                                    <img src="https://images.pexels.com/photos/1459505/pexels-photo-1459505.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                                         alt="Farmer Rajesh Kumar" 
+                                         class="w-12 h-12 rounded-full object-cover"
+                                         loading="lazy"
+                                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                    <div>
+                                        <h4 class="font-inter font-semibold text-text-primary">Rajesh Kumar</h4>
+                                        <p class="text-sm text-text-secondary">Ludhiana, Punjab • 4.8★ (127 reviews)</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="status-success">500L Available</span>
+                                            <span class="text-sm text-text-secondary">Fat: 6.2% | SNF: 9.1%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-inter font-bold text-primary">₹48.20</div>
+                                    <div class="text-sm text-text-secondary mb-2">Current Bid</div>
+                                    <div class="flex items-center space-x-2">
+                                        <button class="btn-primary text-sm px-4 py-2">Place Bid</button>
+                                        <span class="text-sm text-warning-dark">Ends in 2h 15m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auction Item 2 -->
+                        <div class="card hover:shadow-elevated transition-smooth">
+                            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                                <div class="flex items-start space-x-4 mb-4 lg:mb-0">
+                                    <img src="https://images.pixabay.com/photo/2016/11/21/14/53/woman-1845517_960_720.jpg" 
+                                         alt="Farmer Priya Sharma" 
+                                         class="w-12 h-12 rounded-full object-cover"
+                                         loading="lazy"
+                                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                    <div>
+                                        <h4 class="font-inter font-semibold text-text-primary">Priya Sharma</h4>
+                                        <p class="text-sm text-text-secondary">Karnal, Haryana • 4.9★ (89 reviews)</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="status-success">750L Available</span>
+                                            <span class="text-sm text-text-secondary">Fat: 5.8% | SNF: 8.9%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-inter font-bold text-primary">₹47.80</div>
+                                    <div class="text-sm text-text-secondary mb-2">Current Bid</div>
+                                    <div class="flex items-center space-x-2">
+                                        <button class="btn-primary text-sm px-4 py-2">Place Bid</button>
+                                        <span class="text-sm text-warning-dark">Ends in 4h 32m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auction Item 3 -->
+                        <div class="card hover:shadow-elevated transition-smooth">
+                            <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                                <div class="flex items-start space-x-4 mb-4 lg:mb-0">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=60" 
+                                         alt="Farmer Amit Patel" 
+                                         class="w-12 h-12 rounded-full object-cover"
+                                         loading="lazy"
+                                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                                    <div>
+                                        <h4 class="font-inter font-semibold text-text-primary">Amit Patel</h4>
+                                        <p class="text-sm text-text-secondary">Anand, Gujarat • 4.7★ (156 reviews)</p>
+                                        <div class="flex items-center space-x-4 mt-2">
+                                            <span class="status-success">320L Available</span>
+                                            <span class="text-sm text-text-secondary">Fat: 4.5% | SNF: 8.3%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-inter font-bold text-primary">₹42.50</div>
+                                    <div class="text-sm text-text-secondary mb-2">Current Bid</div>
+                                    <div class="flex items-center space-x-2">
+                                        <button class="btn-primary text-sm px-4 py-2">Place Bid</button>
+                                        <span class="text-sm text-warning-dark">Ends in 1h 45m</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Premium Calculator -->
+                <div class="space-y-6">
+                    <div class="card">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">Quality Premium Calculator</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-text-secondary mb-2">Fat Content (%)</label>
+                                <input type="range" min="3" max="8" value="5" class="w-full" id="fatRange">
+                                <div class="flex justify-between text-sm text-text-secondary mt-1">
+                                    <span>3%</span>
+                                    <span id="fatValue">5%</span>
+                                    <span>8%</span>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-text-secondary mb-2">SNF Content (%)</label>
+                                <input type="range" min="7" max="10" value="8.5" step="0.1" class="w-full" id="snfRange">
+                                <div class="flex justify-between text-sm text-text-secondary mt-1">
+                                    <span>7%</span>
+                                    <span id="snfValue">8.5%</span>
+                                    <span>10%</span>
+                                </div>
+                            </div>
+                            <div class="bg-primary-50 p-4 rounded-lg">
+                                <div class="text-center">
+                                    <div class="text-2xl font-inter font-bold text-primary" id="calculatedPrice">₹43.20</div>
+                                    <div class="text-sm text-text-secondary">Estimated Price per Liter</div>
+                                    <div class="text-sm text-success-dark mt-2" id="premiumBonus">+₹1.40 quality bonus</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Market Intelligence -->
+                    <div class="card">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6">Market Intelligence</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 bg-accent-50 rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Festive Demand</div>
+                                    <div class="text-sm text-text-secondary">Diwali approaching</div>
+                                </div>
+                                <div class="text-accent font-semibold">+15%</div>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-warning-light rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Seasonal Trend</div>
+                                    <div class="text-sm text-text-secondary">Winter production peak</div>
+                                </div>
+                                <div class="text-warning-dark font-semibold">+8%</div>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-success-light rounded-lg">
+                                <div>
+                                    <div class="font-medium text-text-primary">Regional Demand</div>
+                                    <div class="text-sm text-text-secondary">Punjab surplus</div>
+                                </div>
+                                <div class="text-success-dark font-semibold">Stable</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contract Management -->
+    <section class="py-12 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">Long-term Contracts</h2>
+                <p class="text-lg text-text-secondary">Secure partnerships with guaranteed pricing and automated payments</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Contract Opportunity 1 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=100" 
+                             alt="Amul Dairy" 
+                             class="w-12 h-12 rounded-lg object-cover"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-inter font-semibold text-text-primary">Amul Dairy</h4>
+                            <p class="text-sm text-text-secondary">Verified Buyer • 4.9★</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="font-medium">12 months</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Volume:</span>
+                            <span class="font-medium">500L/day</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Base Price:</span>
+                            <span class="font-medium text-primary">₹45.00/L</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Quality Bonus:</span>
+                            <span class="font-medium text-success">Up to ₹3.00/L</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-full mt-4">Apply for Contract</button>
+                </div>
+
+                <!-- Contract Opportunity 2 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/05/45/agriculture-1867431_960_720.jpg" 
+                             alt="Mother Dairy" 
+                             class="w-12 h-12 rounded-lg object-cover"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-inter font-semibold text-text-primary">Mother Dairy</h4>
+                            <p class="text-sm text-text-secondary">Verified Buyer • 4.8★</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="font-medium">6 months</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Volume:</span>
+                            <span class="font-medium">300L/day</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Base Price:</span>
+                            <span class="font-medium text-primary">₹44.50/L</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Quality Bonus:</span>
+                            <span class="font-medium text-success">Up to ₹2.50/L</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-full mt-4">Apply for Contract</button>
+                </div>
+
+                <!-- Contract Opportunity 3 -->
+                <div class="card hover:shadow-elevated transition-smooth">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=100&auto=format&fit=crop&q=60" 
+                             alt="Nestle India" 
+                             class="w-12 h-12 rounded-lg object-cover"
+                             loading="lazy"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-inter font-semibold text-text-primary">Nestle India</h4>
+                            <p class="text-sm text-text-secondary">Verified Buyer • 4.7★</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Duration:</span>
+                            <span class="font-medium">18 months</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Volume:</span>
+                            <span class="font-medium">800L/day</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Base Price:</span>
+                            <span class="font-medium text-primary">₹46.20/L</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-text-secondary">Quality Bonus:</span>
+                            <span class="font-medium text-success">Up to ₹4.00/L</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary w-full mt-4">Apply for Contract</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Security Features -->
+    <section class="py-12 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">Trade with Confidence</h2>
+                <p class="text-lg text-text-secondary">Advanced security and trust features protect every transaction</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Escrow Protection -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Escrow Protection</h3>
+                    <p class="text-text-secondary">
+                        Payments held securely until delivery confirmation. Both parties protected from fraud and disputes.
+                    </p>
+                </div>
+
+                <!-- Quality Verification -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Quality Verification</h3>
+                    <p class="text-text-secondary">
+                        Real-time quality testing with certified results. Transparent grading system ensures fair pricing.
+                    </p>
+                </div>
+
+                <!-- Dispute Resolution -->
+                <div class="card text-center">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Dispute Resolution</h3>
+                    <p class="text-text-secondary">
+                        Expert mediation team resolves conflicts quickly. Fair arbitration process with transparent outcomes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Trust Badges -->
+            <div class="border-b border-primary-700 pb-8 mb-8">
+                <h3 class="text-lg font-inter font-semibold mb-6 text-center">Trusted & Certified</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Government Approved</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">ISO Certified</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 1L9 9l-8 3 8 3 3 8 3-8 8-3-8-3-3-8z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Cooperative Partner</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-700 rounded-full flex items-center justify-center mx-auto mb-2">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm">Quality Assured</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Platform</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="farmer_dashboard_analytics.html" class="hover:text-white transition-smooth">Farmer Dashboard</a></li>
+                        <li><a href="buyer_sourcing_supplier_management.html" class="hover:text-white transition-smooth">Buyer Portal</a></li>
+                        <li><a href="live_marketplace_trading_platform.html" class="hover:text-white transition-smooth">Live Marketplace</a></li>
+                        <li><a href="quality_verification_testing_hub.html" class="hover:text-white transition-smooth">Quality Hub</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="payment_processing_financial_transparency.html" class="hover:text-white transition-smooth">Payment Processing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Collection Network</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Quality Testing</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Market Analytics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Training Resources</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Contact Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-primary-200">
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Success Stories</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-white transition-smooth">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-sm text-primary-200 border-t border-primary-700 pt-8">
+                <p>© 2025 DairyConnect. All Rights Reserved. | Empowering farmers, ensuring quality, building trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript for Quality Calculator -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fatRange = document.getElementById('fatRange');
+            const snfRange = document.getElementById('snfRange');
+            const fatValue = document.getElementById('fatValue');
+            const snfValue = document.getElementById('snfValue');
+            const calculatedPrice = document.getElementById('calculatedPrice');
+            const premiumBonus = document.getElementById('premiumBonus');
+
+            function updateCalculator() {
+                const fat = parseFloat(fatRange.value);
+                const snf = parseFloat(snfRange.value);
+                
+                fatValue.textContent = fat + '%';
+                snfValue.textContent = snf + '%';
+                
+                // Base price calculation
+                let basePrice = 38.00;
+                let fatBonus = Math.max(0, (fat - 3.5) * 2.5);
+                let snfBonus = Math.max(0, (snf - 8.0) * 3.0);
+                let totalPrice = basePrice + fatBonus + snfBonus;
+                let bonus = fatBonus + snfBonus;
+                
+                calculatedPrice.textContent = '₹' + totalPrice.toFixed(2);
+                premiumBonus.textContent = '+₹' + bonus.toFixed(2) + ' quality bonus';
+            }
+
+            fatRange.addEventListener('input', updateCalculator);
+            snfRange.addEventListener('input', updateCalculator);
+            
+            // Initialize
+            updateCalculator();
+        });
+    </script>
+</body>
+</html>
